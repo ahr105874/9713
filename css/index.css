@@ -1,0 +1,252 @@
+/* 主页初始化 */
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    background-color: rgb(246,246,246);
+    /* height: 2000px; */
+}
+i{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* 头部 */
+.header{
+    position: fixed;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+}
+.header span{
+    display: block;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.header span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;    
+}
+.header span:nth-child(1) img,
+.header span:nth-child(3) img{
+    width: 18px;
+    height: 30px;
+    vertical-align: middle;
+}
+.header span:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;    
+}
+.header span:nth-child(2){
+    position: relative;
+    width: 100%;
+    margin: 0 50px;
+    margin-top: 7px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+
+}
+.header span:nth-child(2) i:nth-child(1)::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    background: url(../images/sprites.png) no-repeat -84px 0;
+    background-size: 200px;
+    width: 18px;
+    height: 18px;
+    border-right:1px solid #ccc ;
+}
+.header span:nth-child(2) i:nth-child(2){
+    font-size: 12px;
+    color: #ccc;
+}
+/* 轮播图 */
+/* .banner{
+    border-radius: 20px;
+    overflow: hidden;
+} */
+.banner img{
+    width: 100%;
+}
+/* 导航栏 */
+nav{
+    width: 100%;
+    margin-top: -5px;
+    background-color: rgb(202, 233, 245);
+    border-radius: 20px;
+    /* border: 5px solid red; */
+    height: 150px;
+    box-sizing: border-box;
+}
+nav a{
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav a img{
+    width: 42px;
+    height: 42px;
+}
+nav a span{
+    display: block;
+    font-size: 12px;
+}
+/* 大礼包 */
+.gift{
+    display: flex;
+    margin-top: 15px;
+}
+.gift a{
+    flex: 1;
+}
+.gift a img{
+    width: 100%;
+}
+.gift a:nth-child(1){
+    border-right:5px solid white ;
+}
+/* 新人礼包 */
+.newpeople{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+
+}
+.newpeople img{
+    width: 100%;
+}
+/* 每日逛 */
+.everyday{
+    margin-top: 5px;
+    background-color: rgb(202, 233, 245);
+}
+.everyday img{
+    width: 100%;
+}
+.everyday_bd{
+    width: 100%;
+}
+.everyday_bd a{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.everyday_bd a img{
+    width: 60px;
+    height: 60px;
+}
+.everyday_bd a p:nth-child(1){
+    font-size: 18px;
+    font-weight: 700;
+    background-image:linear-gradient(45deg,blue,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 30px;
+    line-height: 35px;   
+}
+.everyday_bd a:nth-child(2) p:nth-child(1){
+    background: linear-gradient(45deg,yellow,green);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(3) p:nth-child(1){
+    background: linear-gradient(45deg,pink,green);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(4) p:nth-child(1){
+    background: linear-gradient(45deg,yellow,pink);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(5) p:nth-child(1){
+    background: linear-gradient(45deg,purple,green);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(6) p:nth-child(1){
+    background: linear-gradient(45deg,yellow,purple);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(7) p:nth-child(1){
+    background: linear-gradient(45deg,red,green);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a:nth-child(8) p:nth-child(1){
+    background: linear-gradient(45deg,yellow,red,green);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.everyday_bd a p:nth-child(2){
+    margin-top: -10px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 0px;
+}
+/* <!-- 猜你喜欢 --> */
+
+.like_hd img{
+    margin-top: 20px;
+    width: 100%;
+}
+.like_bd li{
+    width: 50%;
+    float: left;
+    list-style: none;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+.like_bd li a img{
+    width: 100%;
+}
+.like_bd li a p{
+    padding: 0 5px;
+    font-size:12px ;
+    color: black;
+}
+.like_bd li a span{
+    float: left;
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+}
+.like_bd  .same{
+    border: 1px solid #ccc;
+    float: right;
+    color: rgb(156,156,156);
+}

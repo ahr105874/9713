@@ -1,0 +1,154 @@
+/* 主页初始化 */
+body{
+    /* padding: 0 25px; */
+    background-color: #fff;
+}
+
+div{
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+
+/* 头部 */
+.header{
+    display: flex;
+    padding: 10px 25px;
+    margin-top: 10px;
+    align-items: center;
+}
+.header span:nth-child(1){
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/remove.png) no-repeat;
+    background-size: 24px;
+}
+.header span:nth-child(2){
+    display: block;
+    margin-left: 60px;
+    height: 24px ;
+    line-height: 24px;
+    font-size: 18px;
+    color: black;
+}
+/* 登录部分 */
+.enter{
+    margin-top: 30px;
+}
+.phone-number,
+.pass-number{
+    position: relative;
+    display: flex;
+    margin: 15px 25px;
+    height: 50px ;
+    line-height: 50px;
+    /* background-color: pink; */
+    border-bottom: 1px solid #ccc;
+}
+/* .phone-number{
+} */
+.phone-number span{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+.phone-number span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: 50px;
+    width: 14px;
+    height: 6px;
+    background: url(../images/down-icon.png) no-repeat;
+    background-size: 14px 6px;
+}
+.phone-number .phone{
+    /* display: block; */
+    position: absolute;
+    flex: 1;
+    top: 32px;
+    margin-top: -25px;
+    left:70px;
+    height: 30px;
+    line-height: 30px;
+    width: 223px;
+    border: 0;
+    font-size: 12px;
+}
+.pass-number .pass{
+    display: block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    height: 30px;
+    line-height: 30px;
+    width: 223px;
+    border: 0;
+    border-right: 1px solid #ccc;
+    font-size: 20px;
+}
+.pass-number button{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+}
+.submit a{
+    display: block;
+    /* width: 100%; */
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 28px;
+    background:linear-gradient(30deg,skyblue,pink);
+    height: 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+/* 账号密码登录 */
+.number-enter{
+    padding: 0 20px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.number-enter span{
+    font-size: 12px;
+    color: #ccc;
+}
+/* 其他方式登录 */
+.other-enter{
+    width: 100%;
+    margin-top:50px ;
+    border-top: 1px solid #ccc;
+}
+.other-enter-hd{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.other-enter a{
+    font-family: 'icomoon';
+    float: left;
+    display: block;
+    width: 25%;
+    /* background-color: pink; */
+    text-align: center;
+    font-size: 40px;
+    color: skyblue;
+}
+
+
+
